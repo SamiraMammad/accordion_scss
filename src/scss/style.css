@@ -1,0 +1,85 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.faq {
+  width: 37%;
+}
+.faq .container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 12px 24px;
+  padding: 20px 0px;
+}
+.faq .container .faq-wrapper {
+  border-radius: 15px;
+  padding: 0px 20px;
+}
+.faq .container .faq-wrapper .faq-item {
+  margin: 10px 20px;
+  padding: 15px 0px;
+  border-bottom: 1px solid rgb(203, 199, 199);
+}
+.faq .container .faq-wrapper .faq-item .faq-content {
+  font-size: 15px;
+  display: none;
+  line-height: 26px;
+}
+.faq .container .faq-wrapper .faq-item .faq-header .faq-title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  color: #021937;
+}
+.faq .container .faq-wrapper .faq-item .faq-header .faq-title .question {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.faq .container .faq-wrapper .faq-item .faq-header .faq-title .icons {
+  cursor: pointer;
+}
+.faq .container .faq-wrapper .open .faq-content {
+  display: block;
+}
+
+section {
+  margin: 10% 25%;
+  border-top: 3.5px solid rgb(55, 129, 248);
+  border-radius: 20px;
+}
+
+.faq-title :hover {
+  color: #2f80ed;
+  cursor: pointer;
+}
+
+.question::after {
+  content: "+";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: -10px;
+}
+
+.question.active::after {
+  content: "−";
+  transition: 0.5s all ease;
+}/*# sourceMappingURL=style.css.map */

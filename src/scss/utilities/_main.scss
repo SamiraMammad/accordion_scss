@@ -1,0 +1,97 @@
+.faq{
+    width: 37%;
+    .container{
+
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 12px 24px;
+        padding: 20px 0px;
+
+
+
+        .faq-wrapper{
+            border-radius: 15px;
+            padding: 0px 20px;
+            .faq-item{
+                margin: 10px 20px;
+                padding: 15px 0px;
+                border-bottom: 1px solid rgb(203, 199, 199);
+
+                    .faq-content{
+                        font-size: 15px;
+                        display: none;
+                        line-height: 26px;
+                     }
+                    //  .open{
+                    //   display: block;
+                    //  }
+                    
+                    
+
+
+                .faq-header{
+                    .faq-title{
+
+                        display: flex;
+                        justify-content: space-between;
+                        text-align: center;
+                        position: relative;
+                        color: #021937;
+
+                        .question{
+                            border: none;
+                            background-color: transparent;
+                            font-size: 18px;
+                            display: block;
+                            cursor: pointer;
+                            padding-bottom: 10px;
+                            font-weight: 500;
+
+                        }
+
+                        .icons{
+                           cursor: pointer;
+                        }
+
+                    }
+
+                }
+
+            }
+            .open {
+              .faq-content {
+                display: block;
+              }
+            }
+        }
+    }
+}
+
+
+// .open .faq-content {
+//     display: block;
+//   }
+
+  section {
+    margin: 10% 25%;
+    border-top: 3.5px solid rgb(55, 129, 248);
+    border-radius: 20px;
+  }
+
+  .faq-title :hover {
+    color: #2f80ed;
+    cursor: pointer;
+  }
+
+  .question::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: -10px;
+  }
+  .question.active::after {
+    content: "\2212";
+    transition: .5s all ease;
+  }
+  
